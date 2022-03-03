@@ -2,14 +2,14 @@
 //  RequestVM.swift
 //  ImageLoader
 //
-//  Created by Bhushan Satish Rane on 01/03/22.
+//  Created by Bhushan Satish Rane on 03/03/22.
 //  Copyright © 2022 Bhushan Satish Rane. All rights reserved.
 //
 
 import UIKit
 
 class RequestVM: NSObject {
-    static var shared = RequestVM()//UIApplication.shared.delegate as! AppDelegate
+    static var shared = RequestVM()
     
     let jsonData = """
     [
@@ -167,20 +167,11 @@ class RequestVM: NSObject {
         let decoder = JSONDecoder()
         do{
             let result = try decoder.decode([SampleModel].self, from: jsonData)
-            result.forEach { (sampleModel) in
-                print(sampleModel.description)
-                print(sampleModel.imageUrl)
-            }
-            print(result.description)
-            
-            //             let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
             completionHandler(result,nil)
         }
         catch{
             completionHandler(nil, error)
             print("Error : \(error.localizedDescription)")
         }
-        
-        
     }
 }

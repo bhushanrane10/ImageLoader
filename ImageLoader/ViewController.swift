@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ImageLoader
 //
-//  Created by Bhushan Satish Rane on 01/03/22.
+//  Created by Bhushan Satish Rane on 03/03/22.
 //  Copyright © 2022 Bhushan Satish Rane. All rights reserved.
 //
 
@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         RequestVM.shared.APICall { (sampleModel, error) in
@@ -52,8 +52,6 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
                 cell.imageView?.image = image
             }
         }
-        
-//        cell.imageView?.image = image
         return cell
     }
     

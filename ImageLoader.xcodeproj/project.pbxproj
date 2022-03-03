@@ -109,12 +109,12 @@
 				6E51CA7227CE0D5100C9C32F /* SceneDelegate.swift */,
 				6E51CAA327CE114F00C9C32F /* RequestVM.swift */,
 				6E51CA7427CE0D5100C9C32F /* ViewController.swift */,
+				6E2570BB27CE13FB007AB2AA /* SampleModel.swift */,
 				6E51CA7627CE0D5100C9C32F /* Main.storyboard */,
 				6E51CA7C27CE0D5500C9C32F /* Assets.xcassets */,
 				6E51CA7E27CE0D5500C9C32F /* LaunchScreen.storyboard */,
 				6E51CA8127CE0D5500C9C32F /* Info.plist */,
 				6E51CA7927CE0D5100C9C32F /* ImageLoader.xcdatamodeld */,
-				6E2570BB27CE13FB007AB2AA /* SampleModel.swift */,
 			);
 			path = ImageLoader;
 			sourceTree = "<group>";
